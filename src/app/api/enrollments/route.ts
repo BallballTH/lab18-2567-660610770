@@ -1,12 +1,10 @@
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
-
 import { DB } from "@lib/DB";
 import { NextRequest, NextResponse } from "next/server";
 import jwt from "jsonwebtoken";
 import { headers } from "next/headers";
 import { Payload } from "@lib/DB";
 
-export const GET = async (request: NextRequest) => {
+export const GET = async () => {
   const rawAuthHeader = headers().get("authorization");
 
   if (!rawAuthHeader || !rawAuthHeader.startsWith("Bearer ")) {
