@@ -1,3 +1,5 @@
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+
 import { DB } from "@lib/DB";
 import { NextRequest, NextResponse } from "next/server";
 import jwt from "jsonwebtoken";
